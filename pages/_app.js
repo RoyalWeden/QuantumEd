@@ -1,6 +1,7 @@
-import { ChakraProvider, theme } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
 import Head from 'next/head'
+import theme from '../libs/theme'
 
 function MyApp({ Component, pageProps, router }) {
   return (

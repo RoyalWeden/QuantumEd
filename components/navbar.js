@@ -14,6 +14,7 @@ import {
     IconButton,
     Button,
     Spacer,
+    Text,
     Icon
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -45,7 +46,7 @@ const Navbar = props => {
         >
             <Container
                 display="flex"
-                p={2}
+                p={5}
                 maxW="container.lg.md"
                 align="center"
                 justify="space-between"
@@ -67,20 +68,22 @@ const Navbar = props => {
                     mt={{base: 4, md: 0}}
                 >
                     <LinkItem href="/learn" path={path}>
-                        Learn
+                        LEARN
                     </LinkItem>
                     <Spacer />
                     <LinkItem href="/posts" path={path}>
-                        Posts
+                        POSTS
                     </LinkItem>
                     <Spacer />
                     <LinkItem href="/about" path={path}>
-                        About
+                        ABOUT
                     </LinkItem>
                     <Spacer />
                     <a href="https://github.com/RoyalWeden/QuantumEd" target="_blank">
                         <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon as={IoLogoGithub} />}>
-                            Source
+                            <Text mt={1}>
+                                SOURCE
+                            </Text>
                         </Button>
                     </a>
                     <Spacer />
@@ -97,20 +100,22 @@ const Navbar = props => {
                             />
                             <MenuList>
                                 <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>Home</MenuItem>
+                                    <MenuItem as={Link}>HOME</MenuItem>
                                 </NextLink>
                                 <NextLink href="/learn" passHref>
-                                    <MenuItem as={Link}>Learn</MenuItem>
+                                    <MenuItem as={Link}>LEARN</MenuItem>
                                 </NextLink>
                                 <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
+                                    <MenuItem as={Link}>POSTS</MenuItem>
                                 </NextLink>
                                 <NextLink href="/about" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
+                                    <MenuItem as={Link}>ABOUT</MenuItem>
                                 </NextLink>
                                 <MenuItem as={Link} href="https://github.com/RoyalWeden/QuantumEd" target="_blank">
                                     <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon as={IoLogoGithub} />}>
-                                        Source
+                                        <Text mt={1}>
+                                            SOURCE
+                                        </Text>
                                     </Button>
                                 </MenuItem>
                             </MenuList>

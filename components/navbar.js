@@ -78,13 +78,13 @@ const Navbar = props => {
                         ABOUT
                     </LinkItem>
                     <Spacer />
-                    <a href="https://github.com/RoyalWeden/QuantumEd" target="_blank">
+                    <Link href="https://github.com/RoyalWeden/QuantumEd" isExternal>
                         <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon width={6} height={6} as={IoLogoGithub} />}>
                             <Text mt={1} fontSize={20}>
                                 SOURCE
                             </Text>
                         </Button>
-                    </a>
+                    </Link>
                     <Spacer />
                 </Stack>
 

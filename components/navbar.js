@@ -1,4 +1,5 @@
 import NextLink from 'next/link'
+import Logo from './logo'
 import {
     Container,
     Box,
@@ -12,7 +13,8 @@ import {
     MenuButton,
     IconButton,
     Button,
-    Icon,
+    Spacer,
+    Icon
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
@@ -49,11 +51,13 @@ const Navbar = props => {
                 justify="space-between"
             >
                 <Flex align="center" mr={5}>
-                    <Heading as="h1" size="lg" letterSpacing={'tigher'}>
-
+                    <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+                        <Logo />
                     </Heading>
                 </Flex>
-
+                
+                <Spacer />
+                
                 <Stack
                     direction={{base: 'column', md: 'row'}}
                     display={{base: 'none', md: 'flex'}}
@@ -65,17 +69,21 @@ const Navbar = props => {
                     <LinkItem href="/learn" path={path}>
                         Learn
                     </LinkItem>
+                    <Spacer />
                     <LinkItem href="/posts" path={path}>
                         Posts
                     </LinkItem>
+                    <Spacer />
                     <LinkItem href="/about" path={path}>
                         About
                     </LinkItem>
-                    <LinkItem href="https://github.com/RoyalWeden/QuantumEd" path={path}>
+                    <Spacer />
+                    <a href="https://github.com/RoyalWeden/QuantumEd" target="_blank">
                         <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon as={IoLogoGithub} />}>
                             Source
                         </Button>
-                    </LinkItem>
+                    </a>
+                    <Spacer />
                 </Stack>
 
                 <Box flex={1} align="right">
@@ -100,7 +108,7 @@ const Navbar = props => {
                                 <NextLink href="/about" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
-                                <MenuItem as={Link} href="https://github.com/RoyalWeden/QuantumEd">
+                                <MenuItem as={Link} href="https://github.com/RoyalWeden/QuantumEd" target="_blank">
                                     <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon as={IoLogoGithub} />}>
                                         Source
                                     </Button>

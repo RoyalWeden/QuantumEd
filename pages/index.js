@@ -24,10 +24,10 @@ const Home = () => {
 
       <Section delay={0.3}>
         <P>
-          In contrast to our computers today use "bits" that can be
+          In contrast to our computers today use &quot;bits&quot; that can be
           represented as a 0 or 1. However, quantum computers store
-          and process information with "quantum bits", or "qubits",
-          that can be represented as a 0, 1, or both at the same time.
+          and process information with &quot;quantum bits&quot;, or &quot;qubits
+          &quot;, that can be represented as a 0, 1, or both at the same time.
         </P>
         <P>
           This not only brings the possibility of exponential speedups

@@ -12,9 +12,11 @@ const styles = {
 
 const components = {
     Heading: {
+        baseStyle: props => ({
+            fontFamily: 'Dongle'
+        }),
         variants: {
             'section-title': {
-                fontFamily: 'Dongle',
                 fontSize: 55,
                 textDecoration: 'underline',
                 textUnderlineOffset: 6,
@@ -29,6 +31,12 @@ const components = {
         baseStyle: props => ({
             color: '#3d7aed',
             textUnderlineOffset: 3
+        })
+    },
+    Button: {
+        baseStyle: props => ({
+            marginTop: 3,
+            marginBottom: 4,
         })
     }
 }

@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
     font-weight: bold;
-    font-size: 34px;
+    font-size: 45px;
     display: inline-flex;
     align-items: center;
     height: 20px;
@@ -25,13 +25,13 @@ const Logo = () => {
         <Link href="/">
             <a>
                 <LogoBox>
-                    <Image src={logoImg} width={20} height={20} alt="QuantumEd Logo" />
+                    <Image src={logoImg} width={30} height={30} alt="QuantumEd Logo" />
                     <Text
                         color='grey.900'
                         fontWeight="bold"
                         fontFamily='Dongle'
                         ml={3}
-                        mt={2}
+                        mt={3}
                     >
                         QuantumEd
                     </Text>

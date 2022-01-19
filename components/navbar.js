@@ -39,7 +39,7 @@ const Navbar = props => {
             position="fixed"
             as="nav"
             w="100%"
-            bg='#ffffff40'
+            bg='#E8e8e8'
             css={{ backdropFilter: 'blur(5px)' }}
             zIndex={1}
             {...props}
@@ -51,7 +51,7 @@ const Navbar = props => {
                 align="center"
                 justify="space-between"
             >
-                <Flex align="center" mr={5}>
+                <Flex align="center" mr={5} mt={{base: 4, md: 4}}>
                     <Heading as="h1" size="lg" letterSpacing={'tighter'}>
                         <Logo />
                     </Heading>
@@ -65,7 +65,6 @@ const Navbar = props => {
                     width={{base: 'full', md: 'auto'}}
                     alignItems="center"
                     flexGrow={1}
-                    mt={{base: 4, md: 0}}
                 >
                     <LinkItem href="/learn" path={path}>
                         LEARN
@@ -80,8 +79,8 @@ const Navbar = props => {
                     </LinkItem>
                     <Spacer />
                     <a href="https://github.com/RoyalWeden/QuantumEd" target="_blank">
-                        <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon as={IoLogoGithub} />}>
-                            <Text mt={1}>
+                        <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon width={6} height={6} as={IoLogoGithub} />}>
+                            <Text mt={1} fontSize={20}>
                                 SOURCE
                             </Text>
                         </Button>
@@ -90,11 +89,11 @@ const Navbar = props => {
                 </Stack>
 
                 <Box flex={1} align="right">
-                    <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
+                    <Box ml={2} mt={1} display={{base: 'inline-block', md: 'none'}}>
                         <Menu>
                             <MenuButton
                                 as={IconButton}
-                                icon={<HamburgerIcon />}
+                                icon={<HamburgerIcon width={10} height={10} />}
                                 variant="outline"
                                 aria-label="Options"
                             />
@@ -112,8 +111,8 @@ const Navbar = props => {
                                     <MenuItem as={Link}>ABOUT</MenuItem>
                                 </NextLink>
                                 <MenuItem as={Link} href="https://github.com/RoyalWeden/QuantumEd" target="_blank">
-                                    <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon as={IoLogoGithub} />}>
-                                        <Text mt={1}>
+                                    <Button variant="ghost" colorScheme="#abdbe3" leftIcon={<Icon width={6} height={6} as={IoLogoGithub} />}>
+                                        <Text mt={1} fontSize={20}>
                                             SOURCE
                                         </Text>
                                     </Button>

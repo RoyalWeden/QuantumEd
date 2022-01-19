@@ -4,11 +4,16 @@ import {
   Container,
   Divider,
   Button,
-  Box
+  Box,
+  SimpleGrid
 } from '@chakra-ui/react'
 import P from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
+import { ResourceGridItem } from '../components/grid-item'
+
+import thumbQuest from '../public/images/content/topresources/BillQUEST.png'
+import thumbNqi from '../public/images/content/topresources/NQIsite.png'
 
 const Home = () => {
   return (
@@ -17,7 +22,18 @@ const Home = () => {
         <Heading as="h2" variant="section-title">
           TOP RESOURCES
         </Heading>
-        
+        <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} gap={8}>
+          <ResourceGridItem
+            title="Quantum User Expansion for Science and Technology Program Bill"
+            thumbnail={thumbQuest}
+            href="https://www.congress.gov/bill/116th-congress/house-bill/8303"
+          />
+          <ResourceGridItem
+            title="National Quantum Initiative Program"
+            thumbnail={thumbNqi}
+            href="https://www.quantum.gov/"
+          />
+        </SimpleGrid>
       </Section>
 
       <Divider mt={5} mb={5} />

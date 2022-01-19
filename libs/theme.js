@@ -29,7 +29,8 @@ const components = {
     },
     Link: {
         baseStyle: props => ({
-            color: '#3d7aed',
+            color: '#434343',
+            lineHeight: 0.7,
             textUnderlineOffset: 3
         })
     },

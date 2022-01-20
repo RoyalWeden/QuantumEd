@@ -43,7 +43,7 @@ const About = () => {
                         QuantumEd&apos;s Goal
                     </Heading>
                     <P>
-                        Several years ago the{' '}
+                        Several years ago the
                         <Link href="https://www.congress.gov/bill/117th-congress/house-bill/1837/text" textDecoration="underline" isExternal>Quantum User
                         Expansion for Science and Technology (QUEST) Act</Link> was introduced, however, it was never passed by Congress. This QUEST Act
                         would have brought $340 million over the course of five years to quantum R&D. Without this necessary investment, the U.S. will be

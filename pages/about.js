@@ -56,7 +56,8 @@ const About = () => {
                     </P>
                     <P>
                         Furthmore, educating the future quantum workforce starts with students in middle and high school. This can be achieved by
-                        introducing quantum computing courses relating to the mathematics, physics, or computer science aspect to students.
+                        introducing quantum computing courses relating to the mathematics, physics, or computer science aspect to students
+                        in the public schooling system or through outside sources.
                     </P>
                 </Section>
             </Container>

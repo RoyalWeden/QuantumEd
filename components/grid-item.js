@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+// import NextLink from 'next/link'
 import Image from 'next/image'
 import {
     Box,
@@ -25,6 +25,23 @@ export const ResourceGridItem = ({ children, href, title, thumbnail }) => (
                         {title}
                     </Text>
                 </LinkOverlay>
+                <Text fontSize={20}>{children}</Text>
+            </LinkBox>
+        </Link>
+    </Box>
+)
+
+export const BadgeGridItem = ({ children, href, thumbnail, title }) => (
+    <Box w="100%" align="center">
+        <Link href={href} isExternal>
+            <LinkBox cursor="pointer">
+                <Image
+                    src={thumbnail}
+                    alt={title}
+                    className="grid-item-thumbnail"
+                    placeholder="blur"
+                    loading="lazy"
+                />
                 <Text fontSize={20}>{children}</Text>
             </LinkBox>
         </Link>

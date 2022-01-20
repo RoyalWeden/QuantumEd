@@ -39,7 +39,7 @@ const Navbar = props => {
             position="fixed"
             as="nav"
             w="100%"
-            bg='#E8e8e8'
+            bg='#E8e8e880'
             css={{ backdropFilter: 'blur(5px)' }}
             zIndex={1}
             {...props}

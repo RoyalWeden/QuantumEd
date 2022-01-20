@@ -4,7 +4,7 @@ import { Box, Container } from '@chakra-ui/react'
 
 const Main = ({ children, router }) => {
     return (
-        <Box as="main" pb={8}>
+        <Box as="main" pb={10}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title>QuantumEd</title>
@@ -12,7 +12,7 @@ const Main = ({ children, router }) => {
 
             <Navbar path={router.asPath} />
 
-            <Container maxW="container.md" pt={100}>
+            <Container maxW="container.xl" pt={100}>
                 {children}
             </Container>
         </Box>

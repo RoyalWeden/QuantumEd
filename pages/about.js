@@ -36,12 +36,6 @@ const About = () => {
                         technology, submarine detection that can counter US nuclear-powered attack submarines, and impenetrable military
                         telecommunications that will leave the U.S. unable to maintain its present level of surveilance.
                     </P>
-                </Section>
-                <Divider my={30} />
-                <Section delay={0.6}>
-                    <Heading as="h2" fontSize={40} mb={5} variant="section-title">
-                        QuantumEd&apos;s Goal
-                    </Heading>
                     <P>
                         Several years ago the{" "}
                         <Link href="https://www.congress.gov/bill/117th-congress/house-bill/1837/text" textDecoration="underline" isExternal>Quantum User
@@ -49,10 +43,20 @@ const About = () => {
                         would have brought $340 million over the course of five years to quantum R&D. Without this necessary investment, the U.S. will be
                         unable to stay ahead in the quantum race.
                     </P>
+                </Section>
+                <Divider my={30} />
+                <Section delay={0.6}>
+                    <Heading as="h2" fontSize={40} mb={5} variant="section-title">
+                        QuantumEd&apos;s Goal
+                    </Heading>
                     <P>
                         QuantumEd is to help support the passing of acts in quantum computing, including the QUEST Act. To gain a lead in quantum
                         it is necessary to enhance quantum computing research, educate the future quantum workforce, and speed up the
                         advancement of the core technology in the government and the private sector.
+                    </P>
+                    <P>
+                        Furthmore, educating the future quantum workforce starts with students in middle and high school. This can be achieved by
+                        introducing quantum computing courses relating to the mathematics, physics, or computer science aspect to students.
                     </P>
                 </Section>
             </Container>

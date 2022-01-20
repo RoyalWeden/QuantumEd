@@ -17,7 +17,7 @@ import thumbQuest from '../public/images/content/topresources/BillQUEST.png'
 import thumbNqi from '../public/images/content/topresources/NQIsite.png'
 import thumbQ12 from '../public/images/content/topresources/Q12Edu.png'
 import thumbQiskitText from '../public/images/content/topresources/QiskitTextbook.png'
-import thumbQxQ from '../public/images/content/topresources/QubitbyQubit.png'
+import thumbQxQ from '../public/images/content/topresources/QubitByQubit.png'
 
 import thumbOSTP from '../public/images/content/agencies/OSTP.png'
 import thumbOMB from '../public/images/content/agencies/OMB.png'

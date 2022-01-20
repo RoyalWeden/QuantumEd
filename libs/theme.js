@@ -39,7 +39,13 @@ const components = {
             marginTop: 3,
             marginBottom: 4,
         })
-    }
+    },
+    Text: {
+        baseStyle: props => ({
+            color: '#434343',
+            lineHeight: 0.7,
+        })
+    },
 }
 
 const fonts = {

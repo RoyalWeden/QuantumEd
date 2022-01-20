@@ -31,6 +31,34 @@ export const ResourceGridItem = ({ children, href, title, thumbnail }) => (
     </Box>
 )
 
+export const PostGridItem = ({ children, href, date, timeRead, title, thumbnail }) => (
+    <Box w="100%" align="center">
+        <Text fontSize={12} color="gray.700">
+            {date}
+        </Text>
+        <Link href={href} isExternal>
+            <LinkBox cursor="pointer">
+                <Image
+                    src={thumbnail}
+                    alt={title}
+                    className="grid-item-thumbnail"
+                    placeholder="blur"
+                    loading="lazy"
+                />
+                <Text fontSize={9} color="gray.500">
+                    {timeRead}
+                </Text>
+                <LinkOverlay href={href} target="_blank">
+                    <Text mt={2} fontSize={30}>
+                        {title}
+                    </Text>
+                </LinkOverlay>
+            </LinkBox>
+        </Link>
+        <Text fontSize={20} textAlign="justify">{children}</Text>
+    </Box>
+)
+
 export const BadgeGridItem = ({ children, href, thumbnail, title }) => (
     <Box w="100%" align="center">
         <Link href={href} isExternal>

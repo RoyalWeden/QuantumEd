@@ -94,7 +94,7 @@ const Home = () => {
             computers.
           </P>
           <Box align="center" my={5}>
-            <Link href="/learn">
+            <Link href="/posts">
               <Button
                 rightIcon={<ChevronRightIcon />}
                 colorScheme="blackAlpha"

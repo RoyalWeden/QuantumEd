@@ -18,7 +18,7 @@ const NotFound = () => {
             <Divider my={10} />
 
             <Box my={10} align="center">
-                <Link href="/">
+                <Link href="/" passHref>
                     <Button
                         colorScheme="blackAlpha"
                         rightIcon={<ChevronRightIcon />}

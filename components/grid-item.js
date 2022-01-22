@@ -1,4 +1,3 @@
-// import NextLink from 'next/link'
 import Image from 'next/image'
 import {
     Box,
@@ -78,7 +77,7 @@ export const BadgeGridItem = ({ children, href, thumbnail, title }) => (
 
 export const GridItemStyle = () => (
     <Global styles={`
-            .grid-itme-thumbnail { 
+            .grid-item-thumbnail { 
                 border-radius: 12px;
             }
         `}

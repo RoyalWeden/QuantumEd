@@ -1,14 +1,14 @@
 import {
     Container,
-    Box,
-    Link,
-    Divider,
-    Heading,
+    // Box,
+    // Link,
+    // Divider,
+    // Heading,
     SimpleGrid,
-    Button 
+    // Button 
 } from '@chakra-ui/react'
-import P from '../components/paragraph'
-import Section from '../components/section'
+// import P from '../components/paragraph'
+// import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import { PostGridItem } from '../components/grid-item'
 

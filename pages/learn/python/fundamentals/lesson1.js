@@ -40,8 +40,9 @@ const PythonFundL1 = () => {
                         a <Code>print</Code> statement.
                     </P>
                     <P>
-                        The second statement <Code>var2 = 'This is a variable.'</Code> creates a variable called <Code>var2</Code> and assigns it the
-                        value of <Code>'This is a variable.'</Code>, a string. Then on line 4, <Code>var2</Code> is displayed through
+                        The second statement <Code>var2 = &apos;This is a variable.&apos;</Code> creates a variable
+                        called <Code>var2</Code> and assigns it the value of <Code>&apos;This is a variable.&apos;</Code>, a string.
+                        Then on line 4, <Code>var2</Code> is displayed through
                         a <Code>print</Code> statement.
                     </P>
                 </Section>

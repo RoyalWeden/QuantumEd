@@ -13,13 +13,16 @@
     "@chakra-ui/react": "^1.7.4",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "ace-builds": "^1.4.13",
     "autoprefixer": "^10.4.2",
     "framer-motion": "^5.6.0",
     "next": "12.0.8",
     "postcss": "^8.4.5",
     "react": "17.0.2",
+    "react-ace": "^9.5.0",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "swr": "^1.1.2"
   },
   "devDependencies": {
     "eslint": "8.7.0",

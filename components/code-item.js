@@ -29,7 +29,7 @@ export default class CodeItem extends Component {
             data: [],
             dataPromise: [],
             run: false,
-            returned: true,
+            returned: true
         };
     }
 
@@ -49,12 +49,13 @@ export default class CodeItem extends Component {
     componentDidUpdate() {
         if(this.state.run) {
             this.setState({ returned: false });
+            this.setState({ output: "Running code..." });
             fetch("https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=true&wait=true", {
                 "method": "POST",
                 "headers": {
                     "content-type": "application/json",
                     "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
-                    "x-rapidapi-key": "5d6d8bed5amsh83fd1497b24dc4bp18af10jsn1c99a93dd603",
+                    "x-rapidapi-key": process.env.NEXT_PUBLIC_RAPIDAPI_KEY,
                 },
                 "body": JSON.stringify({
                     "language_id": 71,

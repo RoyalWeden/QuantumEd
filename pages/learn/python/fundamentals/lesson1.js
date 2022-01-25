@@ -4,8 +4,7 @@ import {
     Divider,
     Heading,
     // SimpleGrid,
-    Code,
-    Spacer
+    Code
 } from '@chakra-ui/react'
 import P from '../../../../components/paragraph'
 import Section from '../../../../components/section'

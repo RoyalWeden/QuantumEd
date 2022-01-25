@@ -1,7 +1,7 @@
 import {
     Container,
     // Box,
-    // Divider,
+    Divider,
     Heading,
     SimpleGrid,
 } from '@chakra-ui/react'
@@ -30,13 +30,18 @@ const Learn = () => {
                             href='/learn/python/fundamentals/lesson1'
                             title='Variables'
                         >
-                            Begin variables.
+                            Learn the basics of variables.
                         </LearnGridItem>
                     </SimpleGrid>
-                    {/* <P>
-                        Feel free to test some Python code while this page is being created.
-                    </P>
-                    <DynamicCodeItem input="print('Hello World!')" /> */}
+                    <Divider my={10} />
+                    <SimpleGrid columns={3}>
+                        <LearnGridItem
+                                href='/learn/python/playground'
+                                title='Python Playground'
+                            >
+                                Test Python scripts and run code.
+                        </LearnGridItem>
+                    </SimpleGrid>
                 </Section>
             </Container>
         </Layout>

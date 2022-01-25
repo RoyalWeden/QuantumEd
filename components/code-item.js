@@ -29,7 +29,9 @@ export default class CodeItem extends Component {
             data: [],
             dataPromise: [],
             run: false,
-            returned: true
+            returned: true,
+            inputHeight: props.inputHeight || '200px',
+            resultUserInputHeight: props.ruiHeight || '150px'
         };
     }
 
@@ -98,7 +100,7 @@ export default class CodeItem extends Component {
                     name="UNIQUE_ID_OF_DIV"
                     value={this.state.input}
                     className=" source"
-                    height="200px"
+                    height={this.state.inputHeight}
                     width="100%"
                     editorProps={{
                         $blockScrolling: true
@@ -120,7 +122,7 @@ export default class CodeItem extends Component {
                         <Textarea
                             id="output"
                             fontSize={20}
-                            height="150px"
+                            height={this.state.resultUserInputHeight}
                             width="100%"
                             value={this.state.output}
                             resize='none'
@@ -138,7 +140,7 @@ export default class CodeItem extends Component {
                             name="UNIQUE_ID_OF_DIV"
                             value={this.state.userInput}
                             className=" source"
-                            height="150px"
+                            height={this.state.resultUserInputHeight}
                             width="100%"
                             editorProps={{
                                 $blockScrolling: true

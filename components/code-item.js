@@ -2,7 +2,7 @@ import {
     Box,
     Text,
     Button,
-    Container,
+    SimpleGrid,
     Textarea
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
@@ -88,7 +88,7 @@ export default class CodeItem extends Component {
 
     render() { 
         return (
-            <Box w="100%">
+            <Box w="100%" align="center">
                 <AceEditor
                     required
                     id="input"
@@ -99,6 +99,7 @@ export default class CodeItem extends Component {
                     value={this.state.input}
                     className=" source"
                     height="200px"
+                    width="100%"
                     editorProps={{
                         $blockScrolling: true
                     }}
@@ -106,35 +107,45 @@ export default class CodeItem extends Component {
                 <Button
                     type="submit"
                     size="lg"
-                    height="45px"
-                    fontSize={30}
+                    height="55px"
+                    width="125px"
+                    fontSize={45}
                     onClick={this.onRun}
                 >
                     Run
                 </Button>
-                <Text>Result:</Text>
-                <Textarea
-                    id="output"
-                    fontSize={20}
-                    height="100px"
-                    value={this.state.output}
-                    isReadOnly
-                />
-                <Text>User Input:</Text>
-                <AceEditor
-                    required
-                    id="userInput"
-                    mode="markdown"
-                    theme="terminal"
-                    onChange={this.onUserInputChange}
-                    name="UNIQUE_ID_OF_DIV"
-                    value={this.state.userInput}
-                    className=" source"
-                    height="75px"
-                    editorProps={{
-                        $blockScrolling: true
-                    }}
-                />
+                <SimpleGrid columns={[1, 2, 2]} spacing='40px'>
+                    <Box>
+                        <Text>Result:</Text>
+                        <Textarea
+                            id="output"
+                            fontSize={20}
+                            height="150px"
+                            width="100%"
+                            value={this.state.output}
+                            resize='none'
+                            isReadOnly
+                        />
+                    </Box>
+                    <Box>
+                        <Text>User Input:</Text>
+                        <AceEditor
+                            required
+                            id="userInput"
+                            mode="markdown"
+                            theme="terminal"
+                            onChange={this.onUserInputChange}
+                            name="UNIQUE_ID_OF_DIV"
+                            value={this.state.userInput}
+                            className=" source"
+                            height="150px"
+                            width="100%"
+                            editorProps={{
+                                $blockScrolling: true
+                            }}
+                        />
+                    </Box>
+                </SimpleGrid>
             </Box>
         )
     }

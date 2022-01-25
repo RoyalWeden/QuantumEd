@@ -20,7 +20,7 @@ const DynamicCodeItem = dynamic(
 const Learn = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW='container.md'>
                 <Section>
                     <P>
                         Feel free to test some Python code while this page is being created.

@@ -14,7 +14,7 @@ const About = () => {
         <Layout title="About">
             <Container maxW='container.md'>
                 <Section delay={0.1}>
-                    <Heading as="h1" fontSize={60} align="center" mb={40}>
+                    <Heading as="h1" fontSize={60} align="center" mb='50px'>
                         About QuantumEd
                     </Heading>
                 </Section>

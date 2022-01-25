@@ -60,7 +60,7 @@ const PythonFundL1 = () => {
                     leftHref='/learn'
                     leftText='Back to Learn'
                     rightHref='/learn/python/fundamentals/lesson2'
-                    rightText='Next Lesson'
+                    rightText='Data Types'
                 />
             </Container>
         </Layout>

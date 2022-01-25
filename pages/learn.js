@@ -8,14 +8,8 @@ import {
 import P from '../components/paragraph'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
-import dynamic from 'next/dynamic'
 import React from 'react'
 import { LearnGridItem } from '../components/grid-item'
-
-const DynamicCodeItem = dynamic(
-    () => import('../components/code-item'),
-    { ssr: false }
-)
 
 const Learn = () => {
     return (
@@ -25,12 +19,18 @@ const Learn = () => {
                     <Heading>
                         Python Fundamentals
                     </Heading>
-                    <SimpleGrid columns={[1, 3, 4]}>
+                    <SimpleGrid columns={[1, 3, 4]} spacing='20px'>
                         <LearnGridItem
                             href='/learn/python/fundamentals/lesson1'
-                            title='Variables'
+                            title='1. Variables'
                         >
-                            Learn the basics of variables.
+                            Learn how to assign variables.
+                        </LearnGridItem>
+                        <LearnGridItem
+                            href='/learn/python/fundamentals/lesson2'
+                            title='2. Data Types'
+                        >
+                            Learn different types of Python data types.
                         </LearnGridItem>
                     </SimpleGrid>
                     <Divider my={10} />

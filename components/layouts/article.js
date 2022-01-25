@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 import { GridItemStyle } from '../grid-item'
+import { Spacer } from '@chakra-ui/layout'
 
 const variants = {
     hidden: {opacity: 0, x: 0, y: 0},
@@ -23,6 +24,7 @@ const Layout = ({ children, title }) => (
                     <title>{title} - QuantumEd</title>
                 </Head>
             )}
+            <Spacer mt='1rem' />
             {children}
             <GridItemStyle />
         </>

@@ -1,9 +1,7 @@
 import {
     Container,
-    // Box,
     Divider,
     Heading,
-    // SimpleGrid,
     Code
 } from '@chakra-ui/react'
 import P from '../../../../components/paragraph'
@@ -11,6 +9,7 @@ import Section from '../../../../components/section'
 import Layout from '../../../../components/layouts/article'
 import dynamic from 'next/dynamic'
 import React from 'react'
+import { LessonNav } from '../../../../components/lesson-nav'
 
 const DynamicCodeItem = dynamic(
     () => import('../../../../components/code-item'),
@@ -56,6 +55,13 @@ const PythonFundL1 = () => {
                     </P>
                     <DynamicCodeItem input={codeItem2} />
                 </Section>
+                <Divider mt={10} mb={25} />
+                <LessonNav
+                    leftHref='/learn'
+                    leftText='Back to Learn'
+                    rightHref='/learn/python/fundamentals/lesson2'
+                    rightText='Next Lesson'
+                />
             </Container>
         </Layout>
     )

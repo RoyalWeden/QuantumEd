@@ -19,7 +19,7 @@ const DynamicCodeItem = dynamic(
 const PythonFundL1 = () => {
     let codeItem1 = "var1 = 15\nvar2 = 'This is a variable.'\nprint(var1)\nprint(var2)"
     let codeItem2 = "# This is a comment that gets ignored when running code\n# Write notes or 'comments' in these for yourself and/or others"
-                    + "\n\n# Write your variables\n\n# Print your variables\n"
+                    + "\n\n# Write your variables\n\n\n# Print your variables\n"
     return (
         <Layout>
             <Container maxW='container.md'>

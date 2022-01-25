@@ -19,12 +19,12 @@ const DynamicCodeItem = dynamic(
 const PythonFundL1 = () => {
     let codeItem1 = "# Let's write this statement in a few ways\nstr1 = 'Lorem ipsum dolor sit amet, consectetur "
                     + "adipiscing elit. Praesent semper ac justo vitae viverra.'\nprint(str1)\n\n" +
-                    "print()\n\n" +
-                    "# To separate these sentences on separate lines you can use three quotations\n" +
+                    "print()\n\n" + "# To separate these sentences on separate lines you can use three quotations\n" +
                     "str2 = '''Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nPraesent semper ac justo vitae viverra.'''" +
-                    "\nprint(str2)\n\nprint()\n\n# You can also use \\n, an escape sequence, to crate a new line\n" +
+                    "\nprint(str2)\n\nprint()\n\n# You can also use \\n, an escape sequence, to create a new line\n" +
                     "str3 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\nPraesent semper ac justo vitae viverra.'" +
-                    "\nprint(str3)\n"
+                    "\nprint(str3)\n\n# To combine strings, you can use a plus sign\nstr4 = 'Lorem ipsum dolor sit amet, " +
+                    "consectetur adipiscing elit.' + ' Praesent semper ac justo vitae viverra'\nprint(str4)"
     return (
         <Layout>
             <Container maxW='container.md'>
@@ -42,12 +42,12 @@ const PythonFundL1 = () => {
                 <Divider my={10} />
                 <Section>
                     <Heading as='h2' fontSize={35}>
-                        str
+                        Type: str
                     </Heading>
                     <P>
                         Strings contain text. They will print exactly what you type. However here are a few tricks to type these easier.
                     </P>
-                    <DynamicCodeItem input={codeItem1} />
+                    <DynamicCodeItem input={codeItem1} inputHeight='500px' ruiHeight='250px' />
                 </Section>
                 <Divider mt={10} mb={25} />
                 <LessonNav

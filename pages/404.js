@@ -11,7 +11,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 
 const NotFound = () => {
     return (
-        <Container>
+        <Container maxW='container.md'>
             <Heading as="h1">Not Found</Heading>
             <Text>The page you&apos;re looking for was not found.</Text>
 

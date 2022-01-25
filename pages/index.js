@@ -43,7 +43,7 @@ import thumbUSPTO from '../public/images/content/agencies/USPTO.png'
 const Home = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW='container.md'>
         <Section>
           <Heading as="h1" variant="section-title">
             TOP RESOURCES

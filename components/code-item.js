@@ -127,7 +127,7 @@ export default class CodeItem extends Component {
                             isReadOnly
                         />
                     </Box>
-                    <Box>
+                    <Box mb='2rem'>
                         <Text>User Input:</Text>
                         <AceEditor
                             required

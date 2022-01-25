@@ -30,6 +30,21 @@ export const ResourceGridItem = ({ children, href, title, thumbnail }) => (
     </Box>
 )
 
+export const LearnGridItem = ({ children, href, title }) => (
+    <LinkBox as='article' maxW='sm' borderWidth='1px' borderRadius='1g'>
+        <Box p='6' >
+            <Box display='flex' alignItems='baseline'>
+                <Text my={2} fontSize={30}>
+                    <LinkOverlay href={href}>
+                        {title}
+                    </LinkOverlay>
+                </Text>
+            </Box>
+            <Text fontSize={20}>{children}</Text>
+        </Box>
+    </LinkBox>
+)
+
 export const PostGridItem = ({ children, href, date, timeRead, title, thumbnail }) => (
     <Box w="100%" align="center">
         <Text fontSize={12} color="gray.700">

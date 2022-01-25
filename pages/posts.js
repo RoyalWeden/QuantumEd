@@ -30,7 +30,7 @@ import thumbQuantumAndClassicalStacks from '../public/images/content/posts/quant
 const Posts = () => {
     return (
         <Layout>
-            <Container>
+            <Container maxW='container.md'>
                 <SimpleGrid columns={{sm: 1, md: 2, lg: 3}} gap={6} spacingY={30} align="center">
                     <PostGridItem
                         title="Multi-Qubit Circuits"

@@ -12,7 +12,7 @@ import Layout from '../components/layouts/article'
 const About = () => {
     return (
         <Layout title="About">
-            <Container>
+            <Container maxW='container.md'>
                 <Section delay={0.1}>
                     <Heading as="h1" fontSize={60} align="center" mb={40}>
                         About QuantumEd

@@ -62,7 +62,7 @@ const Learn = () => {
                             href='/learn/python/fundamentals/lesson2'
                             title='2. Data Types'
                         >
-                            Learn different types of Python data types.
+                            Learn different Python data types.
                         </LearnGridItem>
                     </SimpleGrid>
                     <Divider my={10} />

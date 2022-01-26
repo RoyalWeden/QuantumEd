@@ -102,6 +102,7 @@ export default class CodeItem extends Component {
                     className=" source"
                     height={this.state.inputHeight}
                     width="100%"
+                    style={{zIndex: 0}}
                     editorProps={{
                         $blockScrolling: true
                     }}
@@ -142,6 +143,7 @@ export default class CodeItem extends Component {
                             className=" source"
                             height={this.state.resultUserInputHeight}
                             width="100%"
+                            style={{zIndex: 0}}
                             editorProps={{
                                 $blockScrolling: true
                             }}

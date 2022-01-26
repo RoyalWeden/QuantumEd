@@ -22,7 +22,7 @@ const PythonFundL1 = () => {
                     + "\n\n# Write your variables\n\n\n# Print your variables\n"
     return (
         <Layout>
-            <Container maxW='container.md'>
+            <Container maxW='container.lg'>
                 <Heading as='h1' fontSize={60}>
                     Variables
                 </Heading>

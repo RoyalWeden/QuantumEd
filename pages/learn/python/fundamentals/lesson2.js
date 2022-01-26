@@ -23,11 +23,13 @@ const PythonFundL1 = () => {
                     "str2 = '''Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nPraesent semper ac justo vitae viverra.'''" +
                     "\nprint(str2)\n\nprint()\n\n# You can also use \\n, an escape sequence, to create a new line\n" +
                     "str3 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\nPraesent semper ac justo vitae viverra.'" +
-                    "\nprint(str3)\n\n# To combine strings, you can use a plus sign\nstr4 = 'Lorem ipsum dolor sit amet, " +
+                    "\nprint(str3)\n\nprint()\n\n# To combine strings, you can use a plus sign\nstr4 = 'Lorem ipsum dolor sit amet, " +
                     "consectetur adipiscing elit.' + ' Praesent semper ac justo vitae viverra'\nprint(str4)"
+
+    let codeItem2 = ""
     return (
         <Layout>
-            <Container maxW='container.md'>
+            <Container maxW='container.lg'>
                 <Heading as='h1' fontSize={60}>
                     Data Types
                 </Heading>
@@ -49,6 +51,17 @@ const PythonFundL1 = () => {
                         to type them in different ways depending on your use for them.
                     </P>
                     <DynamicCodeItem input={codeItem1} inputHeight='500px' ruiHeight='250px' />
+                </Section>
+                <Section>
+                    <Heading as='h2' fontSize={35}>
+                        Type: int and float
+                    </Heading>
+                    <P>
+                        Integers are numbers without decimals that can range from -2147483648 to 2147483647. Floats have a 
+                        greater range from 1.8 x 10<sup>-308</sup> to 1.8 x 10<sup>308</sup>. Since Python dynamically changes variable
+                        types, it's not necessary to specify which you are using.
+                    </P>
+                    <DynamicCodeItem input={codeItem2} inputHeight='250px' ruiHeight='100px' />
                 </Section>
                 <LessonNav
                     leftHref='/learn/python/fundamentals/lesson1'

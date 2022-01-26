@@ -55,7 +55,6 @@ const PythonFundL1 = () => {
                     </P>
                     <DynamicCodeItem input={codeItem2} />
                 </Section>
-                <Divider mt={10} mb={25} />
                 <LessonNav
                     leftHref='/learn'
                     leftText='Back to Learn'

@@ -51,7 +51,7 @@ const Learn = () => {
                     <Heading>
                         Python Fundamentals
                     </Heading>
-                    <SimpleGrid columns={[1, 3, 4]} spacing='20px'>
+                    <SimpleGrid columns={[1, 2, 4]} spacing='20px'>
                         <LearnGridItem
                             href='/learn/python/fundamentals/lesson1'
                             title='1. Variables'
@@ -66,12 +66,13 @@ const Learn = () => {
                         </LearnGridItem>
                     </SimpleGrid>
                     <Divider my={10} />
-                    <SimpleGrid columns={3}>
+                    <SimpleGrid columns={2}>
                         <LearnGridItem
                                 href='/learn/python/playground'
                                 title='Python Playground'
+                                height='150px'
                             >
-                                Test Python scripts and run code.
+                                Create, test, and run Python scripts in a virtual code editor.
                         </LearnGridItem>
                     </SimpleGrid>
                 </Section>

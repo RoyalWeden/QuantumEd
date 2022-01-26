@@ -49,7 +49,6 @@ const PythonFundL1 = () => {
                     </P>
                     <DynamicCodeItem input={codeItem1} inputHeight='500px' ruiHeight='250px' />
                 </Section>
-                <Divider mt={10} mb={25} />
                 <LessonNav
                     leftHref='/learn/python/fundamentals/lesson1'
                     leftText='Variables'

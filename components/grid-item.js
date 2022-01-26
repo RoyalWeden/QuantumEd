@@ -30,9 +30,9 @@ export const ResourceGridItem = ({ children, href, title, thumbnail }) => (
     </Box>
 )
 
-export const LearnGridItem = ({ children, href, title }) => (
-    <LinkBox as='article' maxW='sm' borderWidth='1px' borderRadius='1g'>
-        <Box p='6' >
+export const LearnGridItem = ({ children, href, title, height }) => (
+    <LinkBox as='article' maxW='sm' borderWidth='1px' borderRadius='1g' height={height || ''}>
+        <Box p='6'>
             <Box display='flex' alignItems='baseline'>
                 <Text my={2} fontSize={30}>
                     <LinkOverlay href={href}>

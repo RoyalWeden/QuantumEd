@@ -14,25 +14,23 @@ import React, { useEffect } from 'react'
 import { LearnGridItem } from '../components/grid-item'
 
 const Learn = () => {
-    if (typeof window === 'object') { // Makes sure that 'document' can be used
-        const quantumWord = document.getElementById('quantum-word')
-        const quantumDefinition = document.getElementById('quantum-definition')
 
         useEffect(() => {
-            fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
-            .then((res) => {
-                return res.json()
-            })
-            .then((data) => {
-                if(data.status == 'success') {
-                    quantumWord.innerText = data.data.word
-                    quantumDefinition.innerText = data.data.definition
-                    // setQuantumWord(data.data.word)
-                    // setQuantumDefinition(data.data.definition)
-                }
-            })
+            if (typeof window === 'object') { // Makes sure that 'document' can be used
+                const quantumWord = document.getElementById('quantum-word')
+                const quantumDefinition = document.getElementById('quantum-definition')
+                fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
+                .then((res) => {
+                    return res.json()
+                })
+                .then((data) => {
+                    if(data.status == 'success') {
+                        quantumWord.innerText = data.data.word
+                        quantumDefinition.innerText = data.data.definition
+                    }
+                })
+            }
         }, [])
-    }
 
     return (
         <Layout>

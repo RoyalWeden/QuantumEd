@@ -10,24 +10,24 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { LearnGridItem } from '../components/grid-item'
 
-export async function getStaticProps() {
-    const res = await fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
-    const quantumWordsData = await res.json()
-    const quantumWord = await quantumWordsData.data.word
-    const quantumDefinition = await quantumWordsData.data.definition
+const Learn = () => {
+    const [quantumWord, setQuantumWord] = useState('')
+    const [quantumDefinition, setQuantumDefinition] = useState('')
 
-    return {
-        props: {
-            quantumWord,
-            quantumDefinition
-        },
-    }
-}
+    useEffect(() => {
+        fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
+        .then(res => res.json())
+        .then((data) => {
+            if(data.status == 'success') {
+                setQuantumWord(data.data.word)
+                setQuantumDefinition(data.data.definition)
+            }
+        })
+    }, [])
 
-const Learn = ({ quantumWord, quantumDefinition }) => {
     return (
         <Layout>
             <Container maxW='container.md'>

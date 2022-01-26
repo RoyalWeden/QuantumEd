@@ -45,15 +45,16 @@ const PythonFundL1 = () => {
                         Type: str
                     </Heading>
                     <P>
-                        Strings contain text. They will print exactly what you type. However here are a few tricks to type these easier.
+                        Strings contain text. They will print exactly what you type. However, here are a few tricks you can use
+                        to type them in different ways depending on your use for them.
                     </P>
                     <DynamicCodeItem input={codeItem1} inputHeight='500px' ruiHeight='250px' />
                 </Section>
                 <LessonNav
                     leftHref='/learn/python/fundamentals/lesson1'
                     leftText='Variables'
-                    rightHref='/learn/python/fundamentals/lesson3'
-                    rightText='Next Lesson'
+                    // rightHref='/learn/python/fundamentals/lesson3'
+                    // rightText='Next Lesson'
                 />
             </Container>
         </Layout>

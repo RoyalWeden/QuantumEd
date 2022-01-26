@@ -28,7 +28,7 @@ const PythonFundL1 = () => {
                 </Heading>
                 <Section>
                     <P>
-                        Variables are for storing information through assignment. To create one simply give your variable a name
+                        Variables are for storing information through assignment. To create one, simply give your variable a name
                         and set it equal to a value (i.e. a string, number, dictionary, etc.). See and run the below example.
                     </P>
                     <DynamicCodeItem input={codeItem1} />

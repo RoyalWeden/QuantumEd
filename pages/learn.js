@@ -14,28 +14,27 @@ import React, { useEffect } from 'react'
 import { LearnGridItem } from '../components/grid-item'
 
 const Learn = () => {
-
-        useEffect(() => {
-            if (typeof window === 'object') { // Makes sure that 'document' can be used
-                const quantumWord = document.getElementById('quantum-word')
-                const quantumDefinition = document.getElementById('quantum-definition')
-                fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
-                .then((res) => {
-                    return res.json()
-                })
-                .then((data) => {
-                    if(data.status == 'success') {
-                        quantumWord.innerText = data.data.word
-                        quantumDefinition.innerText = data.data.definition
-                    }
-                })
-            }
-        }, [])
+    useEffect(() => {
+        if (typeof window === 'object') { // Makes sure that 'document' can be used
+            const quantumWord = document.getElementById('quantum-word')
+            const quantumDefinition = document.getElementById('quantum-definition')
+            fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                if(data.status == 'success') {
+                    quantumWord.innerText = data.data.word
+                    quantumDefinition.innerText = data.data.definition
+                }
+            })
+        }
+    }, [])
 
     return (
         <Layout>
             <Container maxW='container.md'>
-                <Section>
+                <Section id='quantum-word-section'>
                     <Box borderWidth='1px' borderRadius='lg'>
                         <Box align='center'>
                         <Heading as={Code} size='lg' fontSize={40} id='quantum-word'>

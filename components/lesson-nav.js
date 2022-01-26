@@ -31,7 +31,7 @@ export const LessonNav = ({ leftHref, rightHref, leftText, rightText }) => {
     if(rightHref && rightText) {
         rightNavButton = (
             <Button
-                leftIcon={<ChevronRightIcon />}
+                rightIcon={<ChevronRightIcon />}
                 colorScheme="blackAlpha"
                 size="lg"
                 height='55px'

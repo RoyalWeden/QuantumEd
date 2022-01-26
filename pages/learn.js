@@ -10,23 +10,29 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { LearnGridItem } from '../components/grid-item'
 
 const Learn = () => {
-    const [quantumWord, setQuantumWord] = useState('')
-    const [quantumDefinition, setQuantumDefinition] = useState('')
+    if (typeof window === 'object') { // Makes sure that 'document' can be used
+        const quantumWord = document.getElementById('quantum-word')
+        const quantumDefinition = document.getElementById('quantum-definition')
 
-    useEffect(() => {
-        fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
-        .then(res => res.json())
-        .then((data) => {
-            if(data.status == 'success') {
-                setQuantumWord(data.data.word)
-                setQuantumDefinition(data.data.definition)
-            }
-        })
-    }, [])
+        useEffect(() => {
+            fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                if(data.status == 'success') {
+                    quantumWord.innerText = data.data.word
+                    quantumDefinition.innerText = data.data.definition
+                    // setQuantumWord(data.data.word)
+                    // setQuantumDefinition(data.data.definition)
+                }
+            })
+        }, [])
+    }
 
     return (
         <Layout>
@@ -34,13 +40,11 @@ const Learn = () => {
                 <Section>
                     <Box borderWidth='1px' borderRadius='lg'>
                         <Box align='center'>
-                        <Heading as={Code} size='lg' fontSize={40}>
-                            {quantumWord}
+                        <Heading as={Code} size='lg' fontSize={40} id='quantum-word'>
                         </Heading>
                         </Box>
                         <Box p='5'>
-                            <Text lineHeight='1'>
-                                {quantumDefinition}
+                            <Text lineHeight='1' id='quantum-definition'>
                             </Text>
                         </Box>
                     </Box>

@@ -35,8 +35,8 @@ const PythonFundL1 = () => {
                     <P>
                         Variables can be set to many different types of data besides just numbers and strings. Some of the most common
                         data types are <Code>str</Code>, stands for string, <Code>int</Code>, stands for integer, <Code>float</Code>,
-                        stands for a number with a floating point, <Code>list</Code>, <Code>tuple</Code>, <Code>range</Code>,
-                        <Code>dict</Code>, stands for dictionary, and <Code>bool</Code>, which stands for boolean.
+                        stands for a number with a floating point, <Code>list</Code>, <Code>tuple</Code>, <Code>range</Code>, <Code>dict</Code>,
+                        stands for dictionary, and <Code>bool</Code>, which stands for boolean.
                     </P>
                 </Section>
                 <Divider my={10} />

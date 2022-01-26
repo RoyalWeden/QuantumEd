@@ -1,20 +1,51 @@
 import {
+    Box,
+    Code,
     Container,
     // Box,
     Divider,
     Heading,
     SimpleGrid,
+    Text
 } from '@chakra-ui/react'
-import P from '../components/paragraph'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import React from 'react'
 import { LearnGridItem } from '../components/grid-item'
 
-const Learn = () => {
+export async function getStaticProps() {
+    const res = await fetch('https://quantumwords.herokuapp.com/api/v1/word/random')
+    const quantumWordsData = await res.json()
+    const quantumWord = await quantumWordsData.data.word
+    const quantumDefinition = await quantumWordsData.data.definition
+
+    return {
+        props: {
+            quantumWord,
+            quantumDefinition
+        },
+    }
+}
+
+const Learn = ({ quantumWord, quantumDefinition }) => {
     return (
         <Layout>
             <Container maxW='container.md'>
+                <Section>
+                    <Box borderWidth='1px' borderRadius='lg'>
+                        <Box align='center'>
+                        <Heading as={Code} size='lg' fontSize={40}>
+                            {quantumWord}
+                        </Heading>
+                        </Box>
+                        <Box p='5'>
+                            <Text lineHeight='1'>
+                                {quantumDefinition}
+                            </Text>
+                        </Box>
+                    </Box>
+                </Section>
+                <Divider my={10} />
                 <Section>
                     <Heading>
                         Python Fundamentals

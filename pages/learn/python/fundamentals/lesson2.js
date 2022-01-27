@@ -59,7 +59,7 @@ const PythonFundL1 = () => {
                     <P>
                         Integers are numbers without decimals that can range from -2147483648 to 2147483647. Floats have a 
                         greater range from 1.8 x 10<sup>-308</sup> to 1.8 x 10<sup>308</sup>. Since Python dynamically changes variable
-                        types, it's not necessary to specify which you are using.
+                        types, it&apos;s not necessary to specify which you are using.
                     </P>
                     <DynamicCodeItem input={codeItem2} inputHeight='250px' ruiHeight='100px' />
                 </Section>
